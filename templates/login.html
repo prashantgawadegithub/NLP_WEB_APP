@@ -10,11 +10,19 @@
 
     <h3>Login Here</h3>
 
-    <form>
+    {% if message %}
+        <p style="color:green">{{ message }}</p>
+    {% endif %}
+
+    {% if message1 %}
+        <p style="color:red">{{ message1 }}</p>
+    {% endif %}
+
+    <form action="/perform_login" method="post">
         <label>Email</label><br>
-        <input type="email"><br>
+        <input type="email" name="user_email"><br>
         <label>Password</label><br>
-        <input type="password"><br><br>
+        <input type="password" name="user_password"><br><br>
         <input type="submit" value="Login">
     </form>
 
