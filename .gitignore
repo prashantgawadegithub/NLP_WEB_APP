@@ -3,3 +3,4 @@ Lib
 pyvenv.cfg
 .idea
 Scripts
+__pycache__
